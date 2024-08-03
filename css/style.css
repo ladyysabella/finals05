@@ -129,7 +129,7 @@ header .headerBg {
 
 header .headerBg img {
     min-height: 100%;
-    max-height: 90vh;
+    max-height: 95vh;
     width: 100%;
     filter: brightness(20%);
     background-repeat: no-repeat;
@@ -184,6 +184,7 @@ header .headerBg .backgroundText span {
 }
 
 .introSection {
+    height: 70vh;
     width: 100%;
     background-color: var(--color-white);
     display: flex;
@@ -224,6 +225,7 @@ header .headerBg .backgroundText span {
 }
 
 .aboutSection {
+    height: 70vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -243,6 +245,77 @@ header .headerBg .backgroundText span {
 .aboutSection .imgDiv img {
     height: auto;
     width: 400px;
+}
+
+footer {
+    min-height: 100%;
+    background-image: linear-gradient(to bottom, #000000, #191919, #2a2a2a, #3c3c3c, #505050);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topFooter {
+    height: 25vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.topFooter .logo {
+    height: auto;
+    width: 150px;
+}
+
+.topFooter .footerContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.topFooter .footerContent h4 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.topFooter .footerContent li {
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+.topFooter .footerContent a {
+    color: var(--color-white);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.linksContainer a:hover {
+    color: var(--color-maroon);
+}
+
+.linksContainer,
+.contactInfoContainer {
+    padding: 0 20px;
+}
+
+.contactInfoContainer .contactInfo .icon {
+    height: auto;
+    width: 20px;
+    padding: 0 2px;
+    margin-right: 5px;
+}
+
+.bottomFooter {
+    color: var(--color-light-grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 @media screen and (max-width: 1020px) {
