@@ -15,9 +15,6 @@
     <div>
         <nav id="navBar">
             <ul class="sideBar">
-                <!-- <li>
-                    <a href="#"><img src="images/logo1.png" alt="Tinuod"></a>
-                </li> -->
                 <li onclick="hideSidebar()">
                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
                 </li>
@@ -49,8 +46,75 @@
                 </li>
             </ul>
         </nav>
-        <header></header>
-        <footer></footer>
+        <header>
+            <div class="headerBg">
+                <img src="images/background-image.jpg" alt="" srcset="">
+                <div class="headerContent">
+                    <div class="backgroundText">
+                        <p class="decreaseOnMobile">What do you fight for?
+                        </p>
+                        <p class="decreaseOnMobile">Ituod,<span>Tinuod.</span></p>
+                    </div>
+                    <div class="proceedBtnDiv uppercase">
+                        <a href="#introSection">Proceed<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="introSection" class="introSection columnFlexMobile textAlignMobile">
+            <div class="imgDiv"><img src="images/ink-and-quill.png" alt="Ink and Quill"></div>
+            <div class="introContent">
+                <h1>Introduction</h1>
+                <p>It’s gotten as far as reliability having a learning curve, this website is here to help you. </p>
+                <p><span class="bold">Tinuod</span> is a website that is supported by multitudes of professionals within and outside of those learning politics.</p>
+            </div>
+        </section>
+        <section id="aboutSection" class="aboutSection columnFlexMobile textAlignMobile">
+            <div class="imgDiv"><img src="images/tinuod.png" alt="Ink and Quill"></div>
+            <div class="aboutContent">
+                <h1>About</h1>
+                <p>This website will and can always help you understand, especially identify when it is right.</p>
+                <p>Tinuod was simply an idea born out of the lyrics “Testify, define, I’m a brother with a furious mind.”</p>
+            </div>
+        </section>
+        <footer>
+            <section class="topFooter">
+                <div>
+                    <div><img src="images/logo2.png" alt="Tinuod" srcset=""></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#" class="lowercase">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lowercase">Sources</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lowercase">Professionals</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contactInfo">
+                        <ul>
+                            <li>
+                                <img src="images/icons8/icons8-phone-96.png" alt="Phone"> +63 0912 345 6789
+                            </li>
+                            <li>
+                                <img src="images/icons8/icons8-mail-96.png" alt="Mail"> ethan.vaughn.cueto@benilde.edu.ph
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="bottomFooter">
+                <div class="copyrightLabel"><span>2024 &copy; Tinuod, All Rights Reserved.</span></div>
+                <div class="developerInfo"><span>Designed & Developed by Ethan Vaughn Cueto</span></div>
+            </section>
+        </footer>
         <script>
             function showSidebar() {
                 const sideBar = document.querySelector('.sideBar');
