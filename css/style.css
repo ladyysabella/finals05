@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: 'Libre Bodoni', serif;
+    --secondary-font: 'DM Sans', sans-serif;
+    --tertiary-font: 'Inconsolata', monospace;
+    --logo-font: 'Stamp RSPK One';
+    --color-black: #000;
+    --color-white: #FFF;
+    --color-maroon: #AC2525;
+    --color-dark-maroon: #820300;
+    --color-light-grey: #C0C0C0;
+    --color-dark-grey: #505050;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--secondary-font);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hideButton {
+    display: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+nav .logoDiv ul img {
+    height: auto;
+    width: 5rem;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--color-maroon);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-family: var(--tertiary-font);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav li {
+    height: 5em;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav li:first-child img {
+    height: auto;
+    width: 5em;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+nav a .icon {
+    height: auto;
+    width: 20px;
+    padding: 0 2px;
+    margin-right: 15px;
+}
+
+nav li:not(:first-child) a:hover {
+    background-color: var(--color-dark-maroon);
+}
+
+.sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* From https://css.glass */
+    background: rgba(172, 37, 37, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.7px);
+    -webkit-backdrop-filter: blur(15.7px);
+}
+
+.sideBar li,
+.sideBar a {
+    width: 100%;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .hideButton {
+        display: block;
+    }
+}
+
+@media(max-width: 430px) {
+    .sideBar {
+        width: 100%;
+    }
+}
