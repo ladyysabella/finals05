@@ -134,13 +134,13 @@ nav li:not(:first-child) a:hover {
 }
 
 header .headerBg,
-main .sourcesBg {
+header .sourcesBg {
     position: relative;
     text-align: center;
 }
 
 header .headerBg img,
-main .sourcesBg img {
+header .sourcesBg img {
     height: 100%;
     width: 100%;
     filter: brightness(20%);
@@ -152,7 +152,7 @@ main .sourcesBg img {
 }
 
 header .headerContent,
-main .sourcesContent {
+header .sourcesContent {
     position: absolute;
     top: 50%;
     left: 50%;
