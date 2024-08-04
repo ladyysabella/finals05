@@ -50,7 +50,6 @@ nav .logoDiv ul img {
 }
 
 nav {
-    min-height: 10vh;
     width: 100%;
     background-color: var(--color-maroon);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
