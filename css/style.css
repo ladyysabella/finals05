@@ -50,10 +50,15 @@ nav .logoDiv ul img {
 }
 
 nav {
+    min-height: 10vh;
     width: 100%;
     background-color: var(--color-maroon);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     font-family: var(--tertiary-font);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
 }
 
 nav ul {
@@ -260,7 +265,7 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 40px;
+    padding: 60px 40px;
 }
 
 .topFooter .logo {
@@ -336,7 +341,7 @@ footer {
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
-        font-size: 12px;
+        font-size: 14px;
     }
     .topFooter {
         display: block;
