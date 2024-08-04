@@ -10,16 +10,23 @@
     --tertiary-font: 'Inconsolata', monospace;
     --logo-font: 'Stamp RSPK One';
     --color-black: #000;
+    --color-matte-black: #1C1C1C;
     --color-white: #FFF;
     --color-maroon: #AC2525;
     --color-dark-maroon: #820300;
     --color-light-grey: #C0C0C0;
     --color-dark-grey: #505050;
+    --color-brass: #E4C59E;
 }
 
 body {
     min-height: 100vh;
+    min-width: 100%;
     font-family: var(--secondary-font);
+}
+
+a {
+    cursor: pointer;
 }
 
 .uppercase {
@@ -126,28 +133,35 @@ nav li:not(:first-child) a:hover {
     width: 100%;
 }
 
-header .headerBg {
+header .headerBg,
+main .sourcesBg {
     position: relative;
     text-align: center;
 }
 
-header .headerBg img {
-    min-height: 100%;
-    max-height: 95vh;
+header .headerBg img,
+main .sourcesBg img {
+    height: 100%;
     width: 100%;
     filter: brightness(20%);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     object-position: center;
     object-fit: cover;
 }
 
-header .headerBg .headerContent {
+header .headerContent,
+main .sourcesContent {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 header .headerContent .backgroundText {
@@ -252,7 +266,8 @@ header .headerBg .backgroundText span {
 }
 
 footer {
-    min-height: 100%;
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(to bottom, #000000, #191919, #2a2a2a, #3c3c3c, #505050);
     color: var(--color-white);
     display: flex;
@@ -324,6 +339,86 @@ footer {
 .showOnLinksMobile {
     display: none;
 }
+
+
+/***sources.html****/
+
+.sourcesBg {
+    height: 100vh;
+}
+
+.sourcesContent {
+    color: var(--color-white);
+}
+
+.sourcesContent h1 {
+    color: var(--color-brass);
+    padding: 5px 0;
+}
+
+.sourcesContent .backgroundText {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sourcesContent .backgroundText p {
+    line-height: 1.5;
+    margin: 15px 0;
+    width: 60%;
+}
+
+.sourcesBtnContainer {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%
+}
+
+.topSource {
+    display: flex;
+    gap: 20px;
+}
+
+a.sourceLink {
+    font-family: var(--tertiary-font);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-white);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 100px;
+    padding: 10px 15px;
+    width: 100%;
+    background: rgb(98, 98, 98);
+    background: linear-gradient(0deg, rgba(98, 98, 98, 0.7459954233409611) 15%, rgba(49, 49, 49, 0.7459954233409611) 100%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+}
+
+a.sourceLink:hover {
+    background: rgb(104, 104, 104);
+    background: linear-gradient(0deg, rgba(104, 104, 104, 0.5034324942791761) 15%, rgba(255, 255, 255, 0.49656750572082375) 100%);
+    border: 0.5px solid white;
+    transition: all 0.5s ease;
+}
+
+.sourceSection {
+    background-color: var(--color-matte-black);
+    height: 100vh;
+}
+
+
+/***media queries****/
 
 @media (min-width:360px) and (max-width: 730px) {
     footer {
@@ -462,7 +557,7 @@ footer {
     .introSection .imgDiv img,
     .aboutSection .imgDiv img {
         height: auto;
-        width: 100px;
+        width: 45%;
         margin-bottom: 15px;
     }
 }
@@ -472,7 +567,7 @@ footer {
         width: 100%;
     }
     .decreaseOnMobile {
-        font-size: 50%;
+        font-size: 40%;
     }
 }
 
@@ -499,5 +594,69 @@ footer {
     .aboutSection,
     .headerBg {
         height: 100vh;
+    }
+}
+
+@media (min-width:320px) and (max-width:700px) {
+    .sourcesBg {
+        height: 100vh;
+        overflow: hidden;
+    }
+    .sourcesContent {
+        color: var(--color-white);
+    }
+    .sourcesContent h1 {
+        font-size: 54px;
+        color: var(--color-brass);
+        padding: 5px 0;
+    }
+    .sourcesContent .backgroundText {
+        font-size: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sourcesContent .backgroundText p {
+        line-height: 1.5;
+        margin: 15px 0;
+        width: 60%;
+    }
+    .sourcesBtnContainer {
+        padding: 25px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 50%;
+    }
+    .topSource {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 12.5em;
+    }
+    .bottomSource {
+        display: flex;
+        flex-direction: column;
+        width: 12.5em;
+    }
+    a.sourceLink {
+        font-family: var(--tertiary-font);
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--color-white);
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        border-radius: 100px;
+        padding: 10px 15px;
+        width: 100%;
+    }
+    .sourceIcon svg {
+        height: auto;
+        width: 16px;
     }
 }
