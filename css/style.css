@@ -22,6 +22,11 @@
     --color-beige: #F8FAE5;
     --color-brown: #803D3B;
     --color-coffee: #F1DBBF;
+    --color-red: #FF4C4C;
+    --color-green: #80AF81;
+    --color-blue: #7FA1C3;
+    --color-orange: #EF9C66;
+    --color-cyan: #78ABA8;
 }
 
 body {
@@ -33,6 +38,16 @@ body {
 a {
     cursor: pointer;
     text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
 }
 
 .uppercase {
@@ -70,7 +85,7 @@ nav {
     position: sticky;
     top: 0;
     overflow: hidden;
-    z-index: 999;
+    z-index: 9999;
 }
 
 nav ul {
@@ -591,6 +606,103 @@ section.professional:nth-of-type(2) hr {
 
 .patriciaEvangelista {
     background-color: var(--color-brass);
+}
+
+
+/**literature.html**/
+
+.literatureContainer {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.associatedWebsitesHeader,
+.literatureHeader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteIcon {
+    height: auto;
+    width: 75px;
+}
+
+.four-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2.3rem;
+    max-width: 25rem;
+    min-height: 15rem;
+    line-height: 2;
+    box-shadow: 2px 15px 30px -6px rgba(76, 78, 97, 0.2);
+    overflow: hidden;
+    /*to avoid image from overflowing, iguess*/
+    z-index: 999;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+/**Associated Websites**/
+
+.card[data-border-color="red"] {
+    border-top: 0.3rem solid var(--color-red);
+}
+
+.card[data-border-color="orange"] {
+    border-top: 0.3rem solid var(--color-orange);
+}
+
+.card[data-border-color="green"] {
+    border-top: 0.3rem solid var(--color-green);
+}
+
+.card[data-border-color="blue"] {
+    border-top: 0.3rem solid var(--color-blue);
+}
+
+.card[data-border-color="cyan"] {
+    border-top: 0.3rem solid var(--color-cyan);
+}
+
+
+/** Literature **/
+
+.literatureContainer a .siteIcon {
+    float: right;
+    margin-top: 2.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.literatureContainer a .siteIcon:hover {
+    transform: scale(1.5);
+}
+
+
+/*for larger screen sizes*/
+
+@media (min-width: 968px) {
+    .four-card-section {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin: 3rem 0;
+    }
 }
 
 
