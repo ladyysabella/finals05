@@ -428,13 +428,16 @@ a.sourceLink:hover {
 
 /***professionals.html***/
 
+header.professionalsInTheFieldHeader {
+    height: 100vh;
+}
+
 header .professionalsInTheFieldBg {
-    min-height: 100%;
     width: 100%;
 }
 
 header .professionalsInTheFieldBg img.professionalsBgImage {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     filter: brightness(50%);
     background-repeat: no-repeat;
@@ -445,7 +448,7 @@ header .professionalsInTheFieldBg img.professionalsBgImage {
 }
 
 header .professionalsInTheFieldBg {
-    height: 100%;
+    min-height: 100%;
 }
 
 header .professionalsInTheFieldContent {
@@ -486,15 +489,18 @@ header .professionalsInTheFieldContent {
 
 section.professional {
     height: 100%;
-    width: 100%;
+    min-width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     text-align: left;
 }
 
-section.professional h1 {
-    font-size: 5em;
+section.professional h2 {
+    font-family: var(--primary-font);
+    font-size: 5.5em;
+    font-weight: 500;
 }
 
 section.professional p {
@@ -524,7 +530,7 @@ section.professional:nth-of-type(2) a:hover {
 section.professional hr {
     height: 1px;
     border: none;
-    width: 95%;
+    width: 100%;
     outline: none;
     margin: 20px 0;
     color: var(--color-dark-grey-2);
@@ -533,18 +539,18 @@ section.professional hr {
 
 section.professional:nth-of-type(2) hr {
     height: 1px;
-    color: var(--color-very-light-grey);
-    background: var(--color-very-light-grey);
+    color: var(--color-white);
+    background: var(--color-white);
 }
 
-.professional .professionalDescContainer h2 {
+.professional .professionalDescContainer h3 {
     font-weight: 400;
     font-size: 1.4em;
     color: var(--color-dark-grey-2);
     margin: 5px 0;
 }
 
-.professional:nth-of-type(2) .professionalDescContainer h2 {
+.professional:nth-of-type(2) .professionalDescContainer h3 {
     color: var(--color-very-light-grey);
 }
 
@@ -563,10 +569,6 @@ section.professional:nth-of-type(2) hr {
 
 .professional img.professionalImg:hover {
     filter: grayscale(0%);
-}
-
-.professionalImgContainer {
-    padding: 10px;
 }
 
 .professional:nth-of-type(1) .professionalImg {
@@ -592,11 +594,6 @@ section.professional:nth-of-type(2) hr {
 
 
 /***media queries****/
-
-@media screen and (max-width: 1440px) {}
-
-
-/** media query for professionals.html **/
 
 @media (min-width:360px) and (max-width: 730px) {
     footer {
@@ -836,5 +833,68 @@ section.professional:nth-of-type(2) hr {
     .sourceIcon svg {
         height: auto;
         width: 16px;
+    }
+}
+
+@media (max-width: 1060px) {
+    section.professional {
+        flex-direction: column;
+    }
+    .professional .professionalImgContainer {
+        height: auto;
+        width: 100%;
+    }
+    .professional img.professionalImg {
+        height: 50vh;
+        width: 100%;
+        object-position: center;
+    }
+    .professional .professionalDescContainer {
+        padding: 80px;
+    }
+    .professional .professionalDescContainer h2 {
+        font-size: 4.5em;
+    }
+    .professional .professionalDescContainer p {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    header.professionalsInTheFieldHeader {
+        height: 100%;
+        display: flex;
+    }
+    header .professionalsInTheFieldBg {
+        height: 100%;
+        width: 100%;
+    }
+    header .professionalsInTheFieldBg img.professionalsBgImage {
+        height: 100vh;
+        width: 100%;
+        filter: brightness(50%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-position: center;
+        object-fit: cover;
+    }
+    .professionalsInTheFieldContent .backgroundText {
+        text-align: center;
+        color: var(--color-white);
+        display: flex;
+        padding: 100px;
+    }
+    .professionalsInTheFieldContent .backgroundText h1 {
+        font-size: 4.5em;
+        margin-bottom: 10px;
+    }
+    .professionalsInTheFieldContent .backgroundText p {
+        width: 100%;
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+    .professionalsInTheFieldContent .backgroundText .icon {
+        z-index: 9999;
+        height: auto;
+        width: 100px;
     }
 }
