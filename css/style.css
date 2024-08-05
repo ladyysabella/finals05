@@ -10,7 +10,8 @@
     --tertiary-font: 'Inconsolata', monospace;
     --logo-font: 'Stamp RSPK One';
     --color-black: #000;
-    --color-matte-black: #1C1C1C;
+    --color-matte-black: #28282B;
+    --color-matte-black-2: #1C1C1C;
     --color-white: #FFF;
     --color-maroon: #AC2525;
     --color-dark-maroon: #820300;
@@ -296,6 +297,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 9999;
 }
 
 .topFooter {
@@ -611,11 +613,6 @@ section.professional:nth-of-type(2) hr {
 
 /**literature.html**/
 
-.literatureContainer {
-    padding: 2rem;
-    margin: 2rem 0;
-}
-
 .associatedWebsitesHeader,
 .literatureHeader {
     text-align: center;
@@ -657,9 +654,6 @@ section.professional:nth-of-type(2) hr {
     line-height: 1.5;
 }
 
-
-/**Associated Websites**/
-
 .card[data-border-color="red"] {
     border-top: 0.3rem solid var(--color-red);
 }
@@ -680,9 +674,6 @@ section.professional:nth-of-type(2) hr {
     border-top: 0.3rem solid var(--color-cyan);
 }
 
-
-/** Literature **/
-
 .literatureContainer a .siteIcon {
     float: right;
     margin-top: 2.5rem;
@@ -693,10 +684,44 @@ section.professional:nth-of-type(2) hr {
     transform: scale(1.5);
 }
 
+.literatureContainer h1 {
+    font-size: 3.5rem;
+}
+
+#associatedWebsitesSection,
+#literatureSection {
+    min-height: 100vh;
+    width: 100%;
+    padding: 6em 2em 3em 2em;
+}
+
+#associatedWebsitesSection {
+    padding-top: 6em 2em 3em 2em;
+    background: var(--color-matte-black-2);
+    color: var(--color-white)
+}
+
+#literatureSection {
+    background: var(--color-white);
+}
+
+#associatedWebsitesSection .card {
+    background: var(--color-matte-black);
+}
+
 
 /*for larger screen sizes*/
 
 @media (min-width: 968px) {
+    #associatedWebsitesSection,
+    #literatureSection {
+        height: 100vh;
+        width: 100%;
+    }
+    .literatureContainer h1 {
+        font-size: 5rem;
+        margin-bottom: 10px;
+    }
     .four-card-section {
         display: flex;
         flex-direction: row;
