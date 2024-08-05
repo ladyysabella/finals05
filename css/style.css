@@ -561,6 +561,10 @@ section.professional:nth-of-type(2) hr {
     background: var(--color-white);
 }
 
+.professional .professionalDescContainer {
+    padding: 6em 5em 3em 5em;
+}
+
 .professional .professionalDescContainer h3 {
     font-weight: 400;
     font-size: 1.4em;
@@ -570,10 +574,6 @@ section.professional:nth-of-type(2) hr {
 
 .professional:nth-of-type(2) .professionalDescContainer h3 {
     color: var(--color-very-light-grey);
-}
-
-.professional .professionalDescContainer {
-    padding: 50px;
 }
 
 .professional img.professionalImg {
