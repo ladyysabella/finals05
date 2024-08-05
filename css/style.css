@@ -429,10 +429,11 @@ a.sourceLink:hover {
 /***professionals.html***/
 
 header.professionalsInTheFieldHeader {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header .professionalsInTheFieldBg {
+    min-height: 100%;
     width: 100%;
 }
 
@@ -836,65 +837,70 @@ section.professional:nth-of-type(2) hr {
     }
 }
 
-@media (max-width: 1060px) {
+@media (min-width:320px) and (max-width:1100px) {
+    /**professional.html**/
     section.professional {
         flex-direction: column;
     }
-    .professional .professionalImgContainer {
+    .sourceIcon svg {
         height: auto;
-        width: 100%;
+        width: 16px;
     }
-    .professional img.professionalImg {
-        height: 50vh;
-        width: 100%;
-        object-position: center;
-    }
-    .professional .professionalDescContainer {
-        padding: 80px;
-    }
-    .professional .professionalDescContainer h2 {
-        font-size: 4.5em;
-    }
-    .professional .professionalDescContainer p {
-        width: 100%;
-        font-size: 1.5em;
-    }
-    header.professionalsInTheFieldHeader {
-        height: 100%;
-        display: flex;
-    }
-    header .professionalsInTheFieldBg {
-        height: 100%;
-        width: 100%;
-    }
-    header .professionalsInTheFieldBg img.professionalsBgImage {
-        height: 100vh;
-        width: 100%;
-        filter: brightness(50%);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        object-position: center;
-        object-fit: cover;
+    .professionalsInTheFieldContent {
+        padding: 0;
     }
     .professionalsInTheFieldContent .backgroundText {
         text-align: center;
         color: var(--color-white);
         display: flex;
-        padding: 100px;
+        padding: 0 30px;
     }
     .professionalsInTheFieldContent .backgroundText h1 {
-        font-size: 4.5em;
+        font-size: 400%;
         margin-bottom: 10px;
     }
     .professionalsInTheFieldContent .backgroundText p {
-        width: 100%;
-        font-size: 1.5em;
+        width: 80%;
+        font-size: 150%;
         line-height: 1.5;
     }
     .professionalsInTheFieldContent .backgroundText .icon {
         z-index: 9999;
         height: auto;
-        width: 100px;
+        width: 20%;
+    }
+    .professional .professionalDescContainer {
+        padding: 50px;
+    }
+    .professional .professionalDescContainer h2 {
+        font-size: 300%;
+    }
+    .professional .professionalDescContainer p,
+    .professional .professionalDescContainer h3 {
+        width: 100%;
+        font-size: 150%;
+    }
+    header.professionalsInTheFieldHeader {
+        min-height: 100%;
+        max-width: 100%;
+    }
+    header .professionalsInTheFieldBg {
+        height: 100%;
+        max-width: 100%;
+    }
+    header .professionalsInTheFieldBg img.professionalsBgImage {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .professional .professionalImgContainer {
+        height: 100%;
+        width: 100%;
+    }
+    .professional img.professionalImg {
+        height: 100%;
+        width: 100%;
+        object-position: center 40%;
+        aspect-ratio: 1/1;
     }
 }
