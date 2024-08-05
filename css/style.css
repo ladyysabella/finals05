@@ -17,6 +17,9 @@
     --color-light-grey: #C0C0C0;
     --color-dark-grey: #505050;
     --color-brass: #E4C59E;
+    --color-beige: #F8FAE5;
+    --color-brown: #803D3B;
+    --color-coffee: #F1DBBF;
 }
 
 body {
@@ -152,7 +155,8 @@ header .sourcesBg img {
 }
 
 header .headerContent,
-header .sourcesContent {
+header .sourcesContent,
+header .professionalsInTheFieldContent {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -415,6 +419,72 @@ a.sourceLink:hover {
 .sourceSection {
     background-color: var(--color-matte-black);
     height: 100vh;
+}
+
+
+/***professionals.html***/
+
+header .professionalsInTheFieldBg img.professionalsBgImage {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+header .professionalsInTheFieldBg {
+    height: 100%;
+}
+
+header .professionalsInTheFieldContent {
+    min-height: 100%;
+    width: 100%;
+}
+
+.professionalsInTheFieldContent .backgroundText {
+    text-align: center;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.professionalsInTheFieldContent img {
+    height: 100%;
+}
+
+.professionalsInTheFieldContent .backgroundText h1 {
+    font-size: 6em;
+    margin-bottom: 10px;
+}
+
+.professionalsInTheFieldContent .backgroundText p {
+    width: 50%;
+    font-size: 1.5em;
+}
+
+.professionalsInTheFieldContent .backgroundText .icon {
+    z-index: 9999;
+    height: auto;
+    width: 200px;
+    padding: 30px 0;
+}
+
+.fernandoSepe {
+    background-color: var(--color-beige);
+}
+
+section.professional {
+    height: 100%;
+    display: flex;
+}
+
+hr {
+    width: 95%;
 }
 
 
