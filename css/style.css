@@ -453,10 +453,6 @@ header .professionalsInTheFieldContent {
     justify-content: center;
 }
 
-.professionalsInTheFieldContent img {
-    height: 100%;
-}
-
 .professionalsInTheFieldContent .backgroundText h1 {
     font-size: 6em;
     margin-bottom: 10px;
@@ -472,6 +468,20 @@ header .professionalsInTheFieldContent {
     height: auto;
     width: 200px;
     padding: 30px 0;
+}
+
+.professionalImg {
+    height: 95vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+.professionalImg:not(:first-of-type) {
+    object-position: left;
+}
+
+.professionalImg:first-of-type {
+    object-position: 25%;
 }
 
 .fernandoSepe {
