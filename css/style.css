@@ -656,10 +656,11 @@ section.professional:nth-of-type(2) hr {
 }
 
 .sectionHeader {
+  width: 100%;
   display: flex;
   gap: 10px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: inherit;
   align-self: flex-start;
   padding: 10px 50px;
 }
@@ -667,6 +668,10 @@ section.professional:nth-of-type(2) hr {
 .sectionHeader h2 {
   font-size: 180%;
   font-weight: 600;
+}
+
+.siteLinksContainer {
+  max-width: 1200px;
 }
 
 .siteLinksContainer {
@@ -709,7 +714,7 @@ section.professional:nth-of-type(2) hr {
   width: 100%;
 }
 
-.siteLinkCard p span {
+.siteLinkCard .siteDescription p span {
   display: block;
 }
 
@@ -802,14 +807,44 @@ section.professional:nth-of-type(2) hr {
   display: block;
 }
 
+.siteLinkCard .siteTitle p {
+  color: var(--color-light-grey);
+}
+
 /* Media Queries */
 
-/** For Mobile Devices **/
+/** For Desktops, Large screens **/
 
-@media screen and (max-width: 480px) {
-  .sideBar {
+@media screen and (max-width: 1200px) {
+  header img {
+    height: 100vh;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-position: center;
+    object-fit: cover;
   }
+
+  .siteLinkCard {
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+  }
+
+  .siteLinkCard h3 {
+    margin-bottom: 5px;
+  }
+
+  .siteLinkCard .siteTitle p {
+    margin: 15px 0;
+  }
+}
+
+/** For Small screens and Laptops **/
+
+@media screen and (max-width: 1024px) {
 }
 
 /** For iPads and Tablets **/
@@ -918,30 +953,32 @@ section.professional:nth-of-type(2) hr {
     gap: 20px;
     width: 12.5em;
   }
+
+  .siteLinkCard {
+    min-width: 500px;
+  }
+
+  .siteLogo img {
+    height: auto;
+    width: 50%;
+  }
 }
 
-/** For Small screens and Laptops **/
+/** For Mobile Devices **/
 
-@media screen and (max-width: 1024px) {
-}
-
-/** For Desktops, Large screens **/
-
-@media screen and (max-width: 1200px) {
-  header img {
-    height: 100vh;
+@media screen and (max-width: 480px) {
+  p,
+  a,
+  li,
+  span,
+  .sourceText {
+    font-size: 75%;
+  }
+  .sideBar {
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-position: center;
-    object-fit: cover;
   }
 
   .siteLinkCard {
-    min-height: 100%;
-    width: 100%;
-    display: grid;
-    gap: 20px;
+    min-width: 300px;
   }
 }
