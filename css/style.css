@@ -681,6 +681,7 @@ section.professional:nth-of-type(2) hr {
 
 .siteLinkCard {
   border-radius: 15px;
+  min-height: 100%;
   width: 100%;
   background: var(--color-white);
   box-shadow: -1px 5px 4px -2px rgba(0, 0, 0, 0.24);
@@ -703,7 +704,13 @@ section.professional:nth-of-type(2) hr {
 
 .siteLinkCard p {
   text-align: justify;
+  white-space: pre-line;
+  line-height: 1.25;
   width: 100%;
+}
+
+.siteLinkCard p span {
+  display: block;
 }
 
 .siteLinkBtn {
@@ -736,6 +743,10 @@ section.professional:nth-of-type(2) hr {
 
 .siteInfo p {
   color: var(--color-dark-grey-2);
+}
+
+.siteLogo {
+  align-self: center;
 }
 
 .scrollDownBtn a {
@@ -925,5 +936,12 @@ section.professional:nth-of-type(2) hr {
     background-position: center;
     object-position: center;
     object-fit: cover;
+  }
+
+  .siteLinkCard {
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 20px;
   }
 }
