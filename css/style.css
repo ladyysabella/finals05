@@ -180,7 +180,7 @@ header .headerContent,
 header .sourcesContent,
 header .professionalsInTheFieldContent,
 header .assocWebHeaderContent,
-header .literatureContent {
+header .literatureHeaderContent {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -637,8 +637,6 @@ section.professional:nth-of-type(2) hr {
   background-color: var(--color-brass);
 }
 
-/** Associated Websites **/
-
 #siteLinkSection {
   min-height: 100vh;
   width: 100%;
@@ -667,8 +665,8 @@ section.professional:nth-of-type(2) hr {
 }
 
 .sectionHeader h2 {
-    font-size: 180%;
-    font-weight: 600;
+  font-size: 180%;
+  font-weight: 600;
 }
 
 .siteLinksContainer {
@@ -704,11 +702,12 @@ section.professional:nth-of-type(2) hr {
 }
 
 .siteLinkCard p {
+  text-align: justify;
   width: 100%;
 }
 
 .siteLinkBtn {
-  width: 60%;
+  width: 65%;
   align-self: flex-end;
   justify-self: flex-end;
   display: flex;
@@ -739,27 +738,6 @@ section.professional:nth-of-type(2) hr {
   color: var(--color-dark-grey-2);
 }
 
-.assocWebHeaderContent {
-  color: var(--color-white);
-}
-
-.assocWebHeaderContent .backgroundText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1em;
-}
-
-.assocWebHeaderContent .backgroundText h1 {
-  font-size: 400%;
-}
-
-.assocWebHeaderContent .backgroundText p {
-  width: 60%;
-  font-size: 120%;
-}
-
 .scrollDownBtn a {
   width: 60%;
   font-family: var(--tertiary-font);
@@ -775,6 +753,42 @@ section.professional:nth-of-type(2) hr {
 
 .scrollDownBtn a:hover {
   text-decoration: underline;
+}
+
+/** Literature & Associated Websites **/
+
+.assocWebHeaderContent,
+.literatureHeaderContent {
+  color: var(--color-white);
+}
+
+.assocWebHeaderContent .backgroundText,
+.literatureHeaderContent .backgroundText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.assocWebHeaderContent .backgroundText h1,
+.literatureHeaderContent .backgroundText h1 {
+  font-size: 400%;
+}
+
+.assocWebHeaderContent .backgroundText p,
+.literatureHeaderContent .backgroundText p {
+  width: 60%;
+  font-size: 120%;
+}
+
+.literatureHeaderContent .backgroundText p {
+  white-space: pre-wrap;
+  line-height: 1;
+}
+
+.literatureHeaderContent .backgroundText p span {
+  display: block;
 }
 
 /* Media Queries */
