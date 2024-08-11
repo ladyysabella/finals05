@@ -1,99 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinuod</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="images/tinuod.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tinuod</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="images/tinuod.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet">
+    </head>
 
-<body>
-    <nav id="navBar">
-        <ul class="sideBar">
-            <li onclick="hideSidebar()">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
-            </li>
-            <li class="uppercase">
-                <a href="index.html"><img src="images/icons8/icons8-home.svg" alt="Home" class="icon homeIcon">Home</a>
-            </li>
-            <li>
-                <a href="sources.html" class="uppercase"><img src="images/icons8/icons8-books-96.png" alt="Books" class="icon">Sources</a>
-            </li>
-            <li>
-                <a href="professionals.html" class="uppercase"><img src="images/icons8/icons8-team-96.png" alt="Team" class="icon">Professionals</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="index.html"><img src="images/logo1.png" alt="Tinuod"></a>
-            </li>
-            <li class="uppercase hideOnMobile">
-                <a href="index.html"><img src="images/icons8/icons8-home.svg" alt="Home" class="icon">Home</a>
-            </li>
-            <li>
-                <a href="sources.html" class="uppercase hideOnMobile"><img src="images/icons8/icons8-books-96.png" alt="Books" class="icon">Sources</a>
-            </li>
-            <li>
-                <a href="professionals.html" class="uppercase hideOnMobile"><img src="images/icons8/icons8-team-96.png" alt="Team" class="icon">Professionals</a>
-            </li>
-            <li class="hideButton" onclick="showSidebar()">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
-            </li>
-        </ul>
-    </nav>
-   <main></main>
-    <footer class="footerOnMobile">
-        <section class="topFooter topFooterOnMobile">
-            <div>
+    <body>
+        <nav id="navBar">
+            <ul class="sideBar">
+                <li onclick="hideSidebar()">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#ffffff"><path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a>
+                </li>
+                <li class="uppercase">
+                    <a href="index.html"><img
+                            src="images/icons8/icons8-home.svg" alt="Home"
+                            class="icon homeIcon">Home</a>
+                </li>
+                <li>
+                    <a href="sources.html" class="uppercase"><img
+                            src="images/icons8/icons8-books-96.png" alt="Books"
+                            class="icon">Sources</a>
+                </li>
+                <li>
+                    <a href="professionals.html" class="uppercase"><img
+                            src="images/icons8/icons8-team-96.png" alt="Team"
+                            class="icon">Professionals</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/logo1.png"
+                            alt="Tinuod"></a>
+                </li>
+                <li class="uppercase hideOnMobile">
+                    <a href="index.html"><img
+                            src="images/icons8/icons8-home.svg" alt="Home"
+                            class="icon">Home</a>
+                </li>
+                <li>
+                    <a href="sources.html" class="uppercase hideOnMobile"><img
+                            src="images/icons8/icons8-books-96.png" alt="Books"
+                            class="icon">Sources</a>
+                </li>
+                <li>
+                    <a href="professionals.html"
+                        class="uppercase hideOnMobile"><img
+                            src="images/icons8/icons8-team-96.png" alt="Team"
+                            class="icon">Professionals</a>
+                </li>
+                <li class="hideButton" onclick="showSidebar()">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#ffffff"><path
+                                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="associatedWebsitesHeader">
+            <article class="associatedWebsitesBg">
+                <img src="images/dark_academia_library_2.jpg"
+                    alt="Dark Academia Library Background" class="backgroundImg">
+                <div class="assocWebHeaderContent">
+                    <div class="backgroundText">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="auto" viewBox="0 -960 960 960" width="5%" fill="#FFFFFF"><path d="M475-140q5 0 11.5-2.5T497-149l337-338q13-13 19.5-29.67Q860-533.33 860-550q0-17-6.5-34T834-614L654-794q-13-13-30-19.5t-34-6.5q-16.67 0-33.33 6.5Q540-807 527-794l-18 18 81 82q13 14 23 32.5t10 40.5q0 38-29.5 67T526-525q-25 0-41.5-7.5t-30.19-21.34L381-627 200-446q-5 5-7 10.53-2 5.52-2 11.84 0 12.63 8.5 21.13 8.5 8.5 21.17 8.5 6.33 0 11.83-3t9.5-7l138-138 42 42-137 137q-5 5-7 11t-2 12q0 12 9 21t21 9q6 0 11.5-2.5t9.5-6.5l138-138 42 42-137 137q-4 4-6.5 10.33-2.5 6.34-2.5 12.67 0 12 9 21t21 9q6 0 11-2t10-7l138-138 42 42-138 138q-5 5-7 11t-2 11q0 14 8 22t22 8Zm.06 60Q442-80 416-104.5t-31-60.62Q351-170 328-193t-28-57q-34-5-56.5-28.5T216-335q-37-5-61-30t-24-60q0-17 6.72-34.05Q144.45-476.1 157-489l224-224 110 110q8 8 17.33 12.5 9.34 4.5 18.67 4.5 13 0 24.5-11.5t11.5-24.65q0-5.85-3.5-13.35T548-651L405-794q-13-13-30-19.5t-34-6.5q-16.67 0-33.33 6.5-16.67 6.5-29.61 19.36L126-642q-14 14-19.5 29.5t-6.5 35q-1 19.5 7.5 38T128-506l-43 43q-20-22-32.5-53T40-579q0-30 11.5-57.5T84-685l151-151q22-22 49.79-32.5 27.8-10.5 57-10.5 29.21 0 56.71 10.5T448-836l18 18 18-18q22-22 49.79-32.5 27.8-10.5 57-10.5 29.21 0 56.71 10.5T697-836l179 179q22 22 33 50.03 11 28.04 11 57 0 28.97-11 56.47T876-444L539-107q-13 13-29.53 20t-34.41 7ZM377-626Z"/></svg>
+                        <h1>Associated Websites</h1>
+                        <p>The websites linked here are a resource that continually enhances and strengthens reliability. What was already good can be made exceptional. Their purpose is amplified as they build a solid foundation of information.</p>
+                    </div>
+                    <div class="scrollDownBtn uppercase">
+                        <a href="#siteLinkSection" class="scrollDownBtn">scroll down to continue<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></a>
+                    </div>
+                </div>
+            </article>
+        </header>
+        <main>
+            <section id="siteLinkSection">
+                <div class="sectionHeader">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="auto" viewBox="0 -960 960 960" width="32" fill="#000000"><path d="M838-65 720-183v89h-80v-226h226v80h-90l118 118-56 57ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 20-2 40t-6 40h-82q5-20 7.5-40t2.5-40q0-20-2.5-40t-7.5-40H654q3 20 4.5 40t1.5 40q0 20-1.5 40t-4.5 40h-80q3-20 4.5-40t1.5-40q0-20-1.5-40t-4.5-40H386q-3 20-4.5 40t-1.5 40q0 20 1.5 40t4.5 40h134v80H404q12 43 31 82.5t45 75.5q20 0 40-2.5t40-4.5v82q-20 2-40 4.5T480-80ZM170-400h136q-3-20-4.5-40t-1.5-40q0-20 1.5-40t4.5-40H170q-5 20-7.5 40t-2.5 40q0 20 2.5 40t7.5 40Zm34-240h118q9-37 22.5-72.5T376-782q-55 18-99 54.5T204-640Zm172 462q-18-34-31.5-69.5T322-320H204q29 51 73 87.5t99 54.5Zm28-462h152q-12-43-31-82.5T480-798q-26 36-45 75.5T404-640Zm234 0h118q-29-51-73-87.5T584-782q18 34 31.5 69.5T638-640Z"/></svg>
+                    <h2 class="uppercase">Associated Website Links</h2>
+                </div>
+                <div class="siteLinksContainer">
+                    <article class="siteLinkCard">
+                        <div class="siteLogo">
+                            <a href="http://" target="_blank"><img src="images/abs-cbn.png" alt="ABS-CBN" class="roundedLogo"></a>
+                        </div>
+                        <div class="siteInfo">
+                            <div class="siteTitle">
+                                <h3>ABS-CBN</h3>
+                                <p>2024. ABS-CBN Corporation.</p>
+                            </div>
+                            <div class="siteDescription">
+                                <p>ABS-CBN for the longest time has been a consistent source of reliability.</p>
+                            </div>
+                        </div>
+                        <div class="siteLinkBtn">
+                            <a href="http://" target="_blank">Visit Website<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7293E8"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="siteLinkCard">
+                        <div class="siteLogo">
+                            <a href="http://" target="_blank"><img src="images/gma.jpg" alt="ABS-CBN" class="roundedLogo"></a>
+                        </div>
+                        <div class="siteInfo">
+                            <div class="siteTitle">
+                                <h3>GMA Network</h3>
+                                <p>2024. GMA Network Inc.</p>
+                            </div>
+                            <div class="siteDescription">
+                                <p>GMA is reliable source of news on the daily in multiple media coverage.</p>
+                            </div>
+                        </div>
+                        <div class="siteLinkBtn">
+                            <a href="http://" target="_blank">Visit Website<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7293E8"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="siteLinkCard">
+                        <div class="siteLogo">
+                            <a href="http://" target="_blank"><img src="images/pcij.jpg" alt="ABS-CBN" class="roundedLogo"></a>
+                        </div>
+                        <div class="siteInfo">
+                            <div class="siteTitle">
+                                <h3>Philippine Center for Investigative Journalism</h3>
+                                <p>2024. PCIJ Org.</p>
+                            </div>
+                            <div class="siteDescription">
+                                <p>PCIJ, the center for investigative journalism and in its site even has corruption watch.</p>
+                            </div>
+                        </div>
+                        <div class="siteLinkBtn">
+                            <a href="http://" target="_blank">Visit Website<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7293E8"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="siteLinkCard">
+                        <div class="siteLogo">
+                            <a href="http://" target="_blank"><img src="images/rappler.png" alt="ABS-CBN" class="roundedLogo"></a>
+                        </div>
+                        <div class="siteInfo">
+                            <div class="siteTitle">
+                                <h3>Rappler</h3>
+                                <p>2024. Rappler Holdings Corporation.</p>
+                            </div>
+                            <div class="siteDescription">
+                                <p>Rappler stands proud to be generalizing truthfulness, leading to many hating its unbiased nature, speaking for its boldness.</p>
+                            </div>
+                        </div>
+                        <div class="siteLinkBtn">
+                            <a href="http://" target="_blank">Visit Website<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7293E8"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footerOnMobile">
+            <section class="topFooter topFooterOnMobile">
                 <div>
-                    <a href="#"><img src="images/logo2.png" alt="Tinuod" srcset="" class="logo"></a>
-                </div>
-            </div>
-            <div class="footerContent footerContentOnMobile">
-                <div class="linksContainer">
-                    <h4 class="uppercase">Links</h4>
-                    <div class="linksMenu">
-                        <ul class="linksMenuOnMobile">
-                            <li>
-                                <a href="index.html" class="lowercase">Home</a>
-                            </li>
-                            <li class="showOnLinksMobile">|</li>
-                            <li>
-                                <a href="sources.html" class="lowercase">Sources</a>
-                            </li>
-                            <li class="showOnLinksMobile">|</li>
-                            <li>
-                                <a href="professionals.html" class="lowercase">Professionals</a>
-                            </li>
-                        </ul>
+                    <div>
+                        <a href="#"><img src="images/logo2.png" alt="Tinuod"
+                                srcset class="logo"></a>
                     </div>
                 </div>
-                <div class="contactInfoContainer">
-                    <h4 class="uppercase">Contact Us</h4>
-                    <div class="contactInfo">
-                        <ul>
-                            <li>
-                                <img src="images/icons8/icons8-phone-96.png" alt="Phone" class="icon"> +63 0912 345 6789
-                            </li>
-                            <li>
-                                <img src="images/icons8/icons8-mail-96.png" alt="Mail" class="icon"> ethan.vaughn.cueto@benilde.edu.ph
-                            </li>
-                        </ul>
+                <div class="footerContent footerContentOnMobile">
+                    <div class="linksContainer">
+                        <h4 class="uppercase">Links</h4>
+                        <div class="linksMenu">
+                            <ul class="linksMenuOnMobile">
+                                <li>
+                                    <a href="index.html"
+                                        class="lowercase">Home</a>
+                                </li>
+                                <li class="showOnLinksMobile">|</li>
+                                <li>
+                                    <a href="sources.html"
+                                        class="lowercase">Sources</a>
+                                </li>
+                                <li class="showOnLinksMobile">|</li>
+                                <li>
+                                    <a href="professionals.html"
+                                        class="lowercase">Professionals</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contactInfoContainer">
+                        <h4 class="uppercase">Contact Us</h4>
+                        <div class="contactInfo">
+                            <ul>
+                                <li>
+                                    <img src="images/icons8/icons8-phone-96.png"
+                                        alt="Phone" class="icon"> +63 0912 345
+                                    6789
+                                </li>
+                                <li>
+                                    <img src="images/icons8/icons8-mail-96.png"
+                                        alt="Mail" class="icon">
+                                    ethan.vaughn.cueto@benilde.edu.ph
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="bottomFooter bottomFooterOnMobile">
-            <div class="copyrightLabel"><span>2024 &copy; Tinuod, All Rights Reserved.</span></div>
-            <div class="developerInfo"><span>Designed & Developed by Ethan Vaughn Cueto</span></div>
-        </section>
-    </footer>
-    <script>
+            </section>
+            <section class="bottomFooter bottomFooterOnMobile">
+                <div class="copyrightLabel"><span>2024 &copy; Tinuod, All Rights
+                        Reserved.</span></div>
+                <div class="developerInfo"><span>Designed & Developed by Ethan
+                        Vaughn Cueto</span></div>
+            </section>
+        </footer>
+        <script>
         function showSidebar() {
             const sideBar = document.querySelector('.sideBar');
             sideBar.style.display = 'flex';
@@ -104,6 +229,6 @@
             sideBar.style.display = 'none';
         }
     </script>
-</body>
+    </body>
 
 </html>
