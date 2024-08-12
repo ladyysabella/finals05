@@ -295,6 +295,11 @@ header .headerBg .backgroundText span {
   width: 400px;
 }
 
+.aboutContent p span {
+  font-weight: bold;
+  font-style: italic;
+}
+
 footer {
   height: 100%;
   width: 100%;
@@ -845,6 +850,10 @@ section.professional:nth-of-type(2) hr {
 /** For Small screens and Laptops **/
 
 @media screen and (max-width: 1024px) {
+  header .literatureHeaderContent .backgroundText svg {
+    height: auto;
+    width: 100px;
+  }
 }
 
 /** For iPads and Tablets **/
@@ -864,7 +873,18 @@ section.professional:nth-of-type(2) hr {
   li,
   span,
   .sourceText {
-    font-size: 85%;
+    font-size: 75%;
+  }
+
+  .assocWebHeaderContent .backgroundText h1,
+  .literatureHeaderContent .backgroundText h1 {
+    font-size: 300%;
+  }
+
+  .assocWebHeaderContent .backgroundText p,
+  .literatureHeaderContent .backgroundText p {
+    width: 80%;
+    font-size: 100%;
   }
 
   footer {
@@ -958,9 +978,28 @@ section.professional:nth-of-type(2) hr {
     min-width: 500px;
   }
 
+  .siteLinkCard h3 {
+    font-size: 100%;
+  }
+
+  .siteLinkCard .siteTitle p,
+  .siteLinkBtn a {
+    font-size: 80%;
+  }
+
   .siteLogo img {
     height: auto;
-    width: 50%;
+    width: 30%;
+  }
+
+  .scrollDownBtn svg,
+  .sectionHeader svg {
+    display: none;
+  }
+
+  header .literatureHeaderContent .backgroundText svg {
+    height: auto;
+    width: 15%;
   }
 }
 
@@ -974,11 +1013,26 @@ section.professional:nth-of-type(2) hr {
   .sourceText {
     font-size: 75%;
   }
+
+  .sectionHeader h2 {
+    text-align: center;
+  }
+
   .sideBar {
     width: 100%;
   }
 
   .siteLinkCard {
     min-width: 300px;
+  }
+
+  .siteLogo img {
+    height: auto;
+    width: 50%;
+  }
+
+  header .literatureHeaderContent .backgroundText svg {
+    height: auto;
+    width: 20%;
   }
 }
