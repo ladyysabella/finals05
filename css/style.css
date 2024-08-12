@@ -944,6 +944,8 @@ header.associatedWebsitesHeader h1 {
   }
 }
 
+/* Professionals Header */
+
 header .professionalsInTheFieldContent .backgroundText {
   color: var(--color-white);
   display: flex;
@@ -963,3 +965,6 @@ header .professionalsInTheFieldContent .backgroundText p {
   font-size: 18px;
   width: 75%;
 }
+
+/* Professionals Main */
+
