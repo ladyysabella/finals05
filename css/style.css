@@ -822,6 +822,16 @@ section .professionalImg:hover {
   text-decoration: underline;
 }
 
+.professionalSection:nth-of-type(1) .professionalImg {
+  object-position: 25%;
+}
+
+
+.professionalSection:nth-of-type(3) .professionalImg {
+  object-position: 40%;
+}
+
+
 /* Media Queries */
 
 /** For Desktops, Large screens **/
@@ -1116,7 +1126,7 @@ section .professionalImg:hover {
     width: 100%;
     justify-content: space-between;
     gap: 50px;
-    padding: 75px 100px;
+    padding: 75px 50px;
   }
 
   .professionalInfo h2 {
@@ -1130,6 +1140,18 @@ section .professionalImg:hover {
   .professionalInfo p,
   .professionalInfo a {
     font-size: 120%;
+  }
+
+  section .professionalImgContainer {
+    height: 100vw;
+    width: 100vw;
+  }
+
+  section .professionalImg {
+    height:  100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
   }
 }
 
@@ -1214,13 +1236,6 @@ section .professionalImg:hover {
     background: var(--color-brown);
   }
 
-  section .professionalImg {
-    min-height: 100%;
-    height: auto;
-    width: 100%;
-    object-position: center;
-  }
-
   .professionalInfoContainer {
     width: 100%;
     justify-content: space-between;
@@ -1254,7 +1269,7 @@ section .professionalImg:hover {
   .scrollDownBtn {
     width: 100%;
   }
-  
+
   .scrollDownBtn a {
     width: 100%;
     font-size: 80%;
