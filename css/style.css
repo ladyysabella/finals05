@@ -41,6 +41,10 @@ a {
   text-decoration: none;
 }
 
+span {
+  font-size: inherit;
+}
+
 p,
 h1,
 h2,
@@ -229,6 +233,7 @@ header .headerContent .proceedBtnDiv a:hover {
 
 header .headerBg .backgroundText span {
   color: var(--color-maroon);
+  font-size: inherit;
 }
 
 .introSection {
@@ -286,7 +291,7 @@ header .headerBg .backgroundText span {
 
 .introSection .introContent,
 .aboutSection .aboutContent {
-  width: 35%;
+  width: 40%;
 }
 
 .introSection .imgDiv img,
@@ -653,6 +658,11 @@ section.professional:nth-of-type(2) hr {
   padding: 80px 100px;
 }
 
+header.literatureHeader h1,
+header.associatedWebsitesHeader h1 {
+  color: var(--color-coffee);
+}
+
 .roundedLogo {
   height: auto;
   width: 150px;
@@ -854,13 +864,33 @@ section.professional:nth-of-type(2) hr {
     height: auto;
     width: 100px;
   }
+
+  .introSection h1,
+  .aboutSection h1 {
+    font-size: 220%;
+  }
+  .introSection p,
+  .aboutSection p {
+    font-size: 16px;
+  }
+
+  .introSection p span,
+  .aboutSection p span {
+    font-size: inherit;
+  }
+
+  .introSection .imgDiv img,
+  .aboutSection .imgDiv img {
+    height: auto;
+    width: 320px;
+  }
 }
 
 /** For iPads and Tablets **/
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 300%;
+    font-size: 250%;
   }
 
   h2,
@@ -873,7 +903,34 @@ section.professional:nth-of-type(2) hr {
   li,
   span,
   .sourceText {
-    font-size: 75%;
+    font-size: 80%;
+  }
+
+  .introSection .imgDiv {
+    order: 1;
+  }
+  .introSection .introContent {
+    align-items: center;
+    order: 2;
+  }
+  .columnFlexMobile {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .textAlignMobile {
+    text-align: center;
+  }
+  .introSection .imgDiv img,
+  .aboutSection .imgDiv img {
+    height: auto;
+    width: 200px;
+  }
+  .introSection .introContent,
+  .aboutSection .aboutContent {
+    width: 65%;
+    padding: 10px 5px;
   }
 
   .assocWebHeaderContent .backgroundText h1,
@@ -955,7 +1012,7 @@ section.professional:nth-of-type(2) hr {
   }
 
   .decreaseOnMobile {
-    font-size: 75%;
+    font-size: 50%;
   }
 
   .sourcesBtnContainer {
@@ -1009,9 +1066,24 @@ section.professional:nth-of-type(2) hr {
   p,
   a,
   li,
-  span,
   .sourceText {
     font-size: 75%;
+  }
+
+  .headerBg p.decreaseOnMobile {
+    padding: 0 25px;
+    font-size: 40%;
+  }
+
+  .introSection .introContent h1,
+  .aboutSection .aboutContent h1 {
+    font-size: 180%;
+  }
+
+  .introSection .introContent,
+  .aboutSection .aboutContent {
+    width: 85%;
+    padding: 10px 5px;
   }
 
   .sectionHeader h2 {
