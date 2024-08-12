@@ -684,7 +684,7 @@ header .professionalsInTheFieldContent .backgroundText p {
   line-height: 1.5;
 }
 
-/* Professionals Main 1084px~ */
+/* Professionals Main 1024px~ */
 
 section.professionalSection {
   height: 100%;
@@ -713,6 +713,7 @@ section .professionalImg:hover {
   flex-direction: column;
   justify-content: space-around;
   padding: 25px 75px;
+  width: 100%;
 }
 
 .professionalInfo {
@@ -720,6 +721,7 @@ section .professionalImg:hover {
   flex-direction: column;
   gap: 10px;
   color: var(--color-white);
+  width: 100%;
 }
 
 .professionalInfo hr {
@@ -766,19 +768,19 @@ section .professionalImg:hover {
 }
 
 .learnMoreBtnWrapper a {
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: var(--color-brown);
+  color: var(--color-white);
   border: 2px solid var(--color-white);
   border-radius: 100px;
   background-image: -webkit-linear-gradient(30deg, #fff 50%, transparent 50%);
   background-image: linear-gradient(30deg, #fff 50%, transparent 50%);
   background-size: 600px;
   background-repeat: no-repeat;
-  background-position: 0%;
+  background-position: 100%;
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
   width: 12em;
@@ -786,21 +788,34 @@ section .professionalImg:hover {
 }
 
 .learnMoreBtnWrapper a:hover {
-  font-weight: 400;
-  background-position: 100%;
-  color: var(--color-white);
+  font-weight: 500;
+  background-position: 0%;
+  color: var(--color-brown);
 }
 
 .learnMoreBtnWrapper a svg {
-  fill: var(--color-brown);
+  fill: var(--color-white);
 }
 
 .learnMoreBtnWrapper a:hover svg {
-  fill: var(--color-white);
+  fill: var(--color-brown);
 }
 
 .imgSrcLinkWrapper {
   width: 100%;
+}
+
+.imgSrcLinkWrapper span,
+.imgSrcLinkWrapper a.imgSrcLink {
+  font-size: 16px;
+}
+
+.imgSrcLinkWrapper span {
+  color: var(--color-very-light-grey);
+}
+
+.imgSrcLinkWrapper a.imgSrcLink {
+  color: var(--color-blue);
 }
 
 .imgSrcLinkWrapper a.imgSrcLink:hover {
@@ -865,6 +880,25 @@ section .professionalImg:hover {
     height: auto;
     width: 320px;
   }
+
+  .professionalInfoContainer {
+    justify-content: space-evenly;
+    padding: 25px 65px;
+    width: 100%;
+  }
+
+  .professionalInfoContainer h2 {
+    font-size: 380%;
+  }
+
+  .professionalInfoContainer h3 {
+    font-size: 120%;
+  }
+
+  .professionalInfoContainer p,
+  .professionalInfoContainer a {
+    font-size: 120%;
+  }
 }
 
 /** For iPads and Tablets **/
@@ -884,7 +918,7 @@ section .professionalImg:hover {
   li,
   span,
   .sourceText {
-    font-size: 80%;
+    font-size: 100%;
   }
 
   .introSection .imgDiv {
@@ -1035,9 +1069,67 @@ section .professionalImg:hover {
     display: none;
   }
 
-  header .literatureHeaderContent .backgroundText svg {
+  header .literatureHeaderContent .backgroundText svg,
+  header .assocWebHeaderContent .backgroundText svg,
+  header .professionalsInTheFieldContent .backgroundText svg {
     height: auto;
     width: 15%;
+  }
+
+  /* Professionals Header 480px~ */
+
+  header .professionalsInTheFieldContent .backgroundText {
+    width: 100%;
+    gap: 20px;
+    padding: 0 50px;
+  }
+
+  header .professionalsInTheFieldContent .backgroundText h1 {
+    font-size: 350%;
+    color: var(--color-gold);
+    width: 100%;
+  }
+
+  header .professionalsInTheFieldContent .backgroundText p {
+    font-size: 120%;
+    width: 90%;
+    line-height: 1.5;
+  }
+
+  /* Professionals Main 480px~ */
+
+  section.professionalSection {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* row on larger devices */
+    background: var(--color-brown);
+  }
+
+  section .professionalImg {
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+    object-position: center;
+  }
+
+  .professionalInfoContainer {
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 75px 100px;
+  }
+
+  .professionalInfo h2 {
+    font-size: 320%;
+  }
+
+  .professionalInfo h3 {
+    font-size: 120%;
+  }
+
+  .professionalInfo p,
+  .professionalInfo a {
+    font-size: 120%;
   }
 }
 
@@ -1048,7 +1140,7 @@ section .professionalImg:hover {
   a,
   li,
   .sourceText {
-    font-size: 75%;
+    font-size: 95%;
   }
 
   .headerBg p.decreaseOnMobile {
@@ -1084,8 +1176,87 @@ section .professionalImg:hover {
     width: 50%;
   }
 
-  header .literatureHeaderContent .backgroundText svg {
+  footer .bottomFooter span {
+    font-size: 88%;
+  }
+
+  header .literatureHeaderContent .backgroundText svg,
+  header .assocWebHeaderContent .backgroundText svg,
+  header .professionalsInTheFieldContent .backgroundText svg {
     height: auto;
     width: 20%;
+  }
+
+  /* Professionals Header 360px~ */
+
+  header .professionalsInTheFieldContent .backgroundText {
+    width: 100%;
+    gap: 20px;
+    padding: 0 35px;
+  }
+
+  header .professionalsInTheFieldContent .backgroundText h1 {
+    font-size: 275%;
+    width: 100%;
+  }
+
+  header .professionalsInTheFieldContent .backgroundText p {
+    font-size: 100%;
+    width: 100%;
+  }
+
+  /* Professionals Main 360px~ */
+
+  section.professionalSection {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* row on larger devices */
+    background: var(--color-brown);
+  }
+
+  section .professionalImg {
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+    object-position: center;
+  }
+
+  .professionalInfoContainer {
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px;
+  }
+
+  .professionalInfo h2 {
+    font-size: 250%;
+  }
+
+  .professionalInfo h3 {
+    font-size: 100%;
+  }
+
+  .professionalInfo p,
+  .professionalInfo a {
+    font-size: 100%;
+  }
+
+  .learnMoreBtnWrapper a {
+    padding: 8px 16px;
+    font-size: 100%;
+  }
+
+  .imgSrcLinkWrapper span,
+  .imgSrcLinkWrapper a {
+    font-size: 100%;
+  }
+
+  .scrollDownBtn {
+    width: 100%;
+  }
+  
+  .scrollDownBtn a {
+    width: 100%;
+    font-size: 80%;
   }
 }
