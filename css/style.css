@@ -28,6 +28,7 @@
   --color-blue: #7fa1c3;
   --color-orange: #ef9c66;
   --color-cyan: #78aba8;
+  --color-gold: #fcdc94;
 }
 
 body {
@@ -162,7 +163,8 @@ nav li:not(:first-child) a:hover {
 header .headerBg,
 header .sourcesBg,
 header .associatedWebsitesBg,
-header .literatureBg {
+header .literatureBg,
+header .professionalsInTheFieldBg {
   height: 100vh;
   position: relative;
   text-align: center;
@@ -194,7 +196,6 @@ header .literatureHeaderContent {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: auto;
 }
 
 header .headerContent .backgroundText {
@@ -479,172 +480,6 @@ a.sourceLink:hover {
 .sourceSection {
   background-color: var(--color-matte-black);
   height: 100vh;
-}
-
-/***professionals.html <header> ***/
-
-header.professionalsInTheFieldHeader {
-  min-height: 100vh;
-}
-
-header .professionalsInTheFieldBg {
-  min-height: 100%;
-  width: 100%;
-}
-
-header .professionalsInTheFieldBg img.professionalsBgImage {
-  min-height: 100vh;
-  width: 100%;
-  filter: brightness(50%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-position: center;
-  object-fit: cover;
-}
-
-header .professionalsInTheFieldBg {
-  min-height: 100%;
-}
-
-header .professionalsInTheFieldContent {
-  min-height: 100%;
-  width: 100%;
-}
-
-.professionalsInTheFieldContent .backgroundText {
-  text-align: center;
-  color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.professionalsInTheFieldContent .backgroundText h1 {
-  font-size: 5em;
-  margin-bottom: 10px;
-}
-
-.professionalsInTheFieldContent .backgroundText p {
-  padding: 10px 0;
-  width: 85%;
-  font-size: 1.2em;
-  line-height: 1.5;
-}
-
-.professionalsInTheFieldContent .backgroundText .icon {
-  z-index: 9999;
-  height: auto;
-  width: 150px;
-  padding: 30px 0;
-}
-
-/*** professionals.html <main> ***/
-
-section.professional {
-  height: 100%;
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: left;
-}
-
-section.professional h2 {
-  font-family: var(--primary-font);
-  font-size: 5em;
-  font-weight: 500;
-}
-
-section.professional p {
-  font-size: 1.2em;
-  line-height: 2;
-  width: 85%;
-}
-
-section.professional a {
-  color: var(--color-black);
-  transition: all 0.4s ease-in-out;
-}
-
-section.professional:nth-of-type(2) a {
-  color: var(--color-white);
-}
-
-section.professional a:hover {
-  color: var(--color-maroon);
-  text-decoration: underline;
-}
-
-section.professional:nth-of-type(2) a:hover {
-  color: var(--color-brass);
-}
-
-section.professional hr {
-  height: 1px;
-  border: none;
-  width: 100%;
-  outline: none;
-  margin: 20px 0;
-  color: var(--color-dark-grey-2);
-  background: var(--color-dark-grey-2);
-}
-
-section.professional:nth-of-type(2) hr {
-  height: 1px;
-  color: var(--color-white);
-  background: var(--color-white);
-}
-
-.professional .professionalDescContainer {
-  padding: 6em 5em 3em 5em;
-}
-
-.professional .professionalDescContainer h3 {
-  font-weight: 400;
-  font-size: 1.4em;
-  color: var(--color-dark-grey-2);
-  margin: 5px 0;
-}
-
-.professional:nth-of-type(2) .professionalDescContainer h3 {
-  color: var(--color-very-light-grey);
-}
-
-.professional img.professionalImg {
-  height: 100vh;
-  width: 30em;
-  object-fit: cover;
-  filter: grayscale(100%);
-  cursor: pointer;
-  transition: all 0.5s linear;
-}
-
-.professional img.professionalImg:hover {
-  filter: grayscale(0%);
-}
-
-.professional:nth-of-type(1) .professionalImg {
-  object-position: 25%;
-}
-
-.professional:nth-of-type(3) .professionalImg {
-  object-position: 40%;
-}
-
-.fernandoSepe {
-  background-color: var(--color-beige);
-}
-
-.mariaRessa {
-  background-color: var(--color-brown);
-  color: var(--color-white);
-}
-
-.patriciaEvangelista {
-  background-color: var(--color-brass);
 }
 
 #siteLinkSection {
@@ -1107,4 +942,24 @@ header.associatedWebsitesHeader h1 {
     height: auto;
     width: 20%;
   }
+}
+
+header .professionalsInTheFieldContent .backgroundText {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+header .professionalsInTheFieldContent .backgroundText h1 {
+  font-size: 72px;
+  color: var(--color-gold);
+}
+
+header .professionalsInTheFieldContent .backgroundText p {
+  font-size: 18px;
+  width: 75%;
 }
