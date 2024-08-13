@@ -1375,3 +1375,49 @@ section.professionalSection:nth-of-type(2) .learnMoreBtnWrapper a,
     font-size: 80%;
   }
 }
+
+/* Table */
+#citationSection {
+
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid var(--color-black);
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  caption-side: top;
+  text-align: left;
+}
+
+table th a {
+  text-decoration: underline;
+}
+
+th,
+td {
+  font-weight: 500;
+}
+
+th[scope="col"] {
+  font-weight: bold;
+}
+
+th[scope="row"] a {
+  text-decoration: none;
+  color: var(--color-dark-grey-2);
+}
+
+th[scope="row"] a:hover {
+  text-decoration: underline;
+  color: var(--color-dark-grey);
+}
+
+table caption {
+  text-align: left;
+}
